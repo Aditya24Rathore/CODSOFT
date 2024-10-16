@@ -9,6 +9,7 @@ body {
   height: 100vh;
   background-color: #222020;
   font-family: Arial, sans-serif;
+  margin: 0;
 }
 
 .calculator {
@@ -28,7 +29,8 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
-  color: white; 
+  color: white;
+  background-color: #333;
 }
 
 .buttons {
@@ -47,16 +49,6 @@ button {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.clr{
-  background-color: rgb(214, 67, 67);
-}
-.clr:hover {
-  background-color: #be2d23;
-  transition: background-color 0.3s;
-}
-.clr:active {
-  background-color: rgb(140, 22, 22);
-}
 
 button:hover {
   background-color: #4b8a14;
@@ -64,4 +56,30 @@ button:hover {
 
 button:active {
   background-color: #3e6c13;
+}
+
+/* Clear button styling */
+.clr {
+  background-color: rgb(214, 67, 67);
+}
+
+.clr:hover {
+  background-color: #be2d23;
+}
+
+.clr:active {
+  background-color: rgb(140, 22, 22);
+}
+
+/* Operator button styling */
+.operator {
+  background-color: #ff9500;
+}
+
+.operator:hover {
+  background-color: #e68a00;
+}
+
+.operator:active {
+  background-color: #cc7a00;
 }
